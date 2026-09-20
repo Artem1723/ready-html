@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Русская сказка — баня в Анапе</title>
+
+	<link rel="icon" type="image/png" href="img/logo.png">
+	<meta property="og:title" content="Русская сказка — баня в Анапе">
+	<meta property="og:description" content="Пар, море и сила традиций. Русская баня в Анапе.">
+	<meta property="og:image" content="https://artem1723.github.io/RussSkaz/img/Lb.png">
+
+	<!-- ✅ Стартовый скрипт: ставит тему ДО отрисовки (без мигания) -->
+	<script>
+		(function () {
+			try {
+				var t = localStorage.getItem('theme')
+				if (t) document.documentElement.setAttribute('data-theme', t)
+			} catch (e) {}
+		})()
+	</script>
+
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/app.js" defer></script>
+
+</head>
+<body>
+
+	<!-- ✅ Кнопка ТОЛЬКО здесь, в body -->
+	<button class="theme-toggle" aria-label="Переключить тему">
+		<span class="theme-toggle__icon theme-toggle__icon--sun">☀</span>
+		<span class="theme-toggle__icon theme-toggle__icon--moon">☾</span>
+	</button>
+
+
+	<div class="wrapper">
+		<div class="content">
+
+			<header class="hero-section">
+								<img src="img/logo.png" alt="Русская сказка" class="site-logo-img">
+								<video class="hero Lb" src="img/video/hero.mp4" autoplay muted loop playsinline poster="img/Lb.png"></video>
+				<div class="container">
+					<div data-speed=".75" class="main-header">
+						<h1 class="main-title">Русская сказка</h1>
+						<p class="main-subtitle">Русская баня в Анапе · Пар, море и сила традиций</p>
+					</div>
+				</div>
+			</header>
+		
+			<div class="portfolio">
+				<div class="container">
+					<main class="gallery">
+	
+						<div data-speed=".9" class="gallery__left">
+		
+							<img class="gallery__item" src="img/work/XXXLLLLLLLL.webp" alt="Alt">
+							<img class="gallery__item" src="img/work/XXXLX.webp" alt="Alt">
+		
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">Что мы предлагаем</h2>
+								<p class="text-block__p">Настоящая русская парная на дровах (или электрокаменке с закрытой каменкой), где камень аккумулирует мягкое, обволакивающее тепло, не обжигающее дыхание.
+Мы используем отборные веники (березовые, дубовые, эвкалиптовые, пихтовые), которые в сочетании с морским воздухом Анапы дают мощнейший эффект для иммунитета и дыхательной системы.
+ Комфортная зона отдыха с травяными чаями из предгорий Кавказа, купель с прохладной водой и зона релаксации, где тело «запоминает» состояние абсолютной гармонии.
+ Наши опытные банщики знают, как управлять паром, чтобы он лечил, восстанавливал силы и дарил чувство легкости во всем теле.</p>
+							</div>
+		
+							<img class="gallery__item" src="img/work/XXXL.webp" alt="Alt">
+		
+						</div>
+
+						<div data-speed="1.1" class="gallery__right">
+		
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">Русская баня в Анапе: Где морская свежесть встречает силу русского пара</h2>
+								<p class="text-block__p">Наша баня — это оазис целительного микроклимата в самом сердце южного курорта. Мы создали пространство, где вековые традиции русского парения гармонично переплетаются с гостеприимством черноморского побережья. 
+
+Здесь нет суеты курортного сезона. Переступая порог, вы оставляете за дверьми шум моря, крики чаек и городскую гам, погружаясь в атмосферу абсолютного спокойствия, аромата нагретого дерева и целебных трав.
+</p>
+							</div>
+		
+							<img class="gallery__item" src="img/work/XXXXXLL.webp" alt="Alt">
+							<img class="gallery__item" src="img/work/XXXLLLLLL.webp" alt="Alt">
+							<img class="gallery__item" src="img/work/XXXLLLL.webp" alt="Alt">
+
+							<div class="text-block gallery__item">
+								<h2 class="text-block__h">Наша философия уникальна тем, что мы находимся на пересечении стихий.</h2>
+								<p class="text-block__p">Снаружи — ласковое южное солнце, соленый бриз Анапы и шум прибоя. Внутри — суровая и заботливая сила русского дерева, камня и огня. Мы дарим гостям уникальный опыт: прогреться до самой глубины, чтобы затем с новым, обновленным дыханием вдохнуть полной грудью морской воздух.
+</p>
+							</div>
+		
+						</div>
+
+					</main>
+				</div>
+			</div>
+
+			<!-- Разделитель-мотив -->
+			<div class="container">
+				<div class="divider">
+					<span class="divider__line"></span>
+					<span class="divider__rhomb"></span>
+					<span class="divider__line"></span>
+				</div>
+			</div>
+
+			<!-- ====== АККОРДЕОН-ГАЛЕРЕЯ С ТЕКСТОМ ====== -->
+			<section class="accordion-section">
+				<div class="container">
+					<div class="accordion-layout">
+						
+						<div class="text-block accordion-text">
+							<h2 class="text-block__h">Атмосфера нашей бани</h2>
+							<p class="text-block__p">Каждая деталь создана для полного погружения: аромат нагретого дерева, мягкий свет свечей, тишина, в которой слышно только потрескивание дров. Мы верим, что настоящая баня — это не просто пар, а состояние души.</p>
+						</div>
+
+						<div class="options">
+							<div class="option" style="background-image: url(img/accordion/XXXL.webp);"></div>
+							<div class="option" style="background-image: url(img/accordion/XXXLLL.webp);"></div>
+							<div class="option" style="background-image: url(img/accordion/XXXLLLL.webp);"></div>
+							<div class="option" style="background-image: url(img/accordion/XXXLLLLLL.webp);"></div>
+							<div class="option" style="background-image: url(img/accordion/XXXXL.webp);"></div>
+							<div class="option" style="background-image: url(img/accordion/XXXXXL.webp);"></div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- ========================================== -->
+
+			<!-- ====== CTA-секция ====== -->
+			<section class="cta-section">
+				<div class="container">
+					<div class="divider">
+						<span class="divider__line"></span>
+						<span class="divider__rhomb"></span>
+						<span class="divider__line"></span>
+					</div>
+					<h2 class="cta-title">Готовы окунуться в сказку?</h2>
+					<p class="cta-subtitle">Выберите, что вам интересно, и мы встретим вас у порога</p>
+					<div class="cta-buttons">
+						<a href="landing1.html" class="cta-btn cta-btn--primary">Наши виллы <span class="cta-btn__arrow">→</span></a>
+						<a href="landing2.html" class="cta-btn cta-btn--secondary">Банька <span class="cta-btn__arrow">→</span></a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ====== Footer с гербом ====== -->
+			<footer class="footer">
+				<div class="container">
+					<img src="img/logo.png" alt="" class="footer__logo">
+					<p class="footer__text">© Русская сказка · Анапа</p>
+					<p class="footer__small">Море. Пар. Традиции.</p>
+				</div>
+			</footer>
+
+		</div>
+	</div>
+
+	<!-- ====== ЛАЙТБОКС: картинка целиком в раме ====== -->
+	<div class="lightbox">
+		<div class="lightbox__backdrop"></div>
+		<figure class="lightbox__frame">
+			<img class="lightbox__img" src="" alt="Фото бани">
+		</figure>
+	</div>
+
+</body>
+</html>
